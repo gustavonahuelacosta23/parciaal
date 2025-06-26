@@ -31,7 +31,7 @@ int main() {
         fread(&sample_count, sizeof(uint32_t), 1, musiquita);
         fread(nombre, sizeof(char), 64, musiquita);
 
-        posiciones[i] = ftell(musiquita); // guardar posición de los datos de audio
+        posiciones[i] = ftell(musiquita); // guardo posición de los datos de audio
 
         printf("Pista %d: %s - %u muestras, %u Hz\n", i + 1, nombre, sample_count, sample_rate);
     }
